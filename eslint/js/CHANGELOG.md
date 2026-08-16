@@ -1,0 +1,346 @@
+# @zemd/eslint-js
+
+## 3.1.1
+
+### Patch Changes
+
+- 308b0b4: Removing deprecated rule
+
+## 3.1.0
+
+### Minor Changes
+
+- ca1a55a: Repository maintenance
+
+## 3.0.3
+
+### Patch Changes
+
+- c9ead70: Update dependencies
+- Updated dependencies [c9ead70]
+  - @zemd/eslint-common@3.0.3
+
+## 3.0.2
+
+### Patch Changes
+
+- a53cbf8: Update dependencies
+- Updated dependencies [a53cbf8]
+  - @zemd/eslint-common@3.0.2
+
+## 3.0.1
+
+### Patch Changes
+
+- Updated dependencies [00f428f]
+  - @zemd/eslint-common@3.0.1
+
+## 3.0.0
+
+### Major Changes
+
+- b964e64: Migrate from eslint-plugin-react to @eslint-react/eslint-plugin
+
+### Patch Changes
+
+- Updated dependencies [b964e64]
+  - @zemd/eslint-common@3.0.0
+
+## 2.0.6
+
+### Patch Changes
+
+- ff2e9b0: Update dependencies
+- Updated dependencies [ff2e9b0]
+  - @zemd/eslint-common@2.0.3
+
+## 2.0.5
+
+### Patch Changes
+
+- e929336: Update dependencies
+- Updated dependencies [e929336]
+  - @zemd/eslint-common@2.0.2
+
+## 2.0.4
+
+### Patch Changes
+
+- c33490f: Temporarily dropping support for outdated plugins
+
+## 2.0.3
+
+### Patch Changes
+
+- f71c074: Update dependencies, eslint 10 support
+
+## 2.0.2
+
+### Patch Changes
+
+- cbb7697: Update dependencies, Add eslint 10 support
+- Updated dependencies [cbb7697]
+  - @zemd/eslint-common@2.0.1
+
+## 2.0.1
+
+### Patch Changes
+
+- 51f48b5: Removing sonarjs from dependencies
+
+## 2.0.0
+
+### Major Changes
+
+- 3ad0b02: Make sonarjs optional, migrate from tsup to tsdown
+
+### Patch Changes
+
+- Updated dependencies [3ad0b02]
+  - @zemd/eslint-common@2.0.0
+
+## 1.1.22
+
+### Patch Changes
+
+- 2f7165c: Dependencies update
+
+## 1.1.21
+
+### Patch Changes
+
+- f91e374: Update dependencies
+
+## 1.1.20
+
+### Patch Changes
+
+- a9c5bc4: chore: update dependencies
+
+## 1.1.19
+
+### Patch Changes
+
+- 70b8ffc: update dependencies
+
+## 1.1.18
+
+### Patch Changes
+
+- 46fa478: deps bump
+
+## 1.1.17
+
+### Patch Changes
+
+- b18ad98: update deps
+
+## 1.1.16
+
+### Patch Changes
+
+- 47f71bb: bump deps
+
+## 1.1.15
+
+### Patch Changes
+
+- 1aa5a2d: bump deps
+
+## 1.1.14
+
+### Patch Changes
+
+- 3c48ae4: deps bump
+
+## 1.1.13
+
+### Patch Changes
+
+- b6bfd62: update deps
+
+## 1.1.12
+
+### Patch Changes
+
+- b64d639: bump dependencies
+
+## 1.1.11
+
+### Patch Changes
+
+- 0601e34: update deps
+
+## 1.1.10
+
+### Patch Changes
+
+- 26d5d71: bump deps
+
+## 1.1.9
+
+### Patch Changes
+
+- 9440811: bump deps
+
+## 1.1.8
+
+### Patch Changes
+
+- 5431e11: bump deps
+
+## 1.1.7
+
+### Patch Changes
+
+- cb1dede: bump dependencies
+
+## 1.1.6
+
+### Patch Changes
+
+- d78ecd8: bump deps
+
+## 1.1.5
+
+### Patch Changes
+
+- 1393711: update deps
+
+## 1.1.4
+
+### Patch Changes
+
+- 1aca4ff: bump dependencies
+
+## 1.1.3
+
+### Patch Changes
+
+- 906fea2: update deps
+
+## 1.1.2
+
+### Patch Changes
+
+- 03fa747: update README.md
+
+## 1.1.1
+
+### Patch Changes
+
+- Updated dependencies [7e0535f]
+  - @zemd/eslint-common@1.0.4
+
+## 1.1.0
+
+### Minor Changes
+
+- 4aa3dbd: add eslint-plugin-regexp plugin rules
+
+## 1.0.15
+
+### Patch Changes
+
+- 9ba7cc0: update deps
+
+## 1.0.14
+
+### Patch Changes
+
+- 990490f: update deps
+
+## 1.0.13
+
+### Patch Changes
+
+- 3d0763e: update deps
+
+## 1.0.12
+
+### Patch Changes
+
+- 7d3e3df: update deps
+
+## 1.0.11
+
+### Patch Changes
+
+- 7808595: update deps
+
+## 1.0.10
+
+### Patch Changes
+
+- 03cfbbc: update deps
+
+## 1.0.9
+
+### Patch Changes
+
+- ea7b91a: repo maintenance
+
+## 1.0.8
+
+### Patch Changes
+
+- 1b7db28: bump dependencies
+
+## 1.0.7
+
+### Patch Changes
+
+- f04ce40: repo/packages maintenance
+- Updated dependencies [f04ce40]
+  - @zemd/eslint-common@1.0.3
+
+## 1.0.6
+
+### Patch Changes
+
+- 5ad5ffa: update deps
+
+## 1.0.5
+
+### Patch Changes
+
+- e2bce15: update readme for all packages
+- Updated dependencies [e2bce15]
+  - @zemd/eslint-common@1.0.2
+
+## 1.0.4
+
+### Patch Changes
+
+- f81427a: updating unicorn rules and bumping deps
+
+## 1.0.3
+
+### Patch Changes
+
+- 8830307: enhancing js and ts linting rules
+
+## 1.0.2
+
+### Patch Changes
+
+- d8e969e: update deps
+
+## 1.0.1
+
+### Patch Changes
+
+- 2443ed5: adding @eslint/json, upgrading deps
+- Updated dependencies [2443ed5]
+  - @zemd/eslint-common@1.0.1
+
+## 1.0.0
+
+### Major Changes
+
+- 56795bd: Splitting package on multiple stacks
+
+### Patch Changes
+
+- Updated dependencies [56795bd]
+  - @zemd/eslint-common@1.0.0

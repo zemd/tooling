@@ -1,0 +1,91 @@
+{
+  "name": "zemd-theme-dark",
+  "displayName": "Onyx Dark Theme",
+  "version": "0.9.0",
+  "private": true,
+  "description": "A Visual Studio Code theme for effective work",
+  "categories": [
+    "Themes"
+  ],
+  "keywords": [
+    "dark",
+    "onyx",
+    "theme",
+    "zemd"
+  ],
+  "homepage": "https://github.com/zemd/js-tooling/tree/main/vscode/theme-onyx",
+  "bugs": {
+    "url": "https://github.com/zemd/js-tooling/issues"
+  },
+  "license": "Apache-2.0",
+  "author": {
+    "name": "Dmytro Zelenetskyi",
+    "email": "oss@zemd.dev",
+    "url": "https://zemd.dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zemd/js-tooling.git",
+    "directory": "vscode/theme-onyx"
+  },
+  "funding": "https://github.com/sponsors/zemd",
+  "publisher": "zemd",
+  "files": [
+    "LICENSE",
+    "icon.png",
+    "themes/*",
+    "assets/onyx-ghost.png"
+  ],
+  "type": "module",
+  "exports": {
+    "./*": "./*"
+  },
+  "scripts": {
+    "dev": "nodemon -e ts,json",
+    "build": "node --experimental-strip-types src/index.ts",
+    "validate": "node --experimental-strip-types scripts/validate-manifest.ts",
+    "test": "pnpm run build && pnpm run validate",
+    "test-coverage": "pnpm run test",
+    "typecheck": "tsc --noEmit",
+    "vscode:prepublish": "pnpm run test",
+    "package": "node --experimental-strip-types scripts/package.ts",
+    "publish:vscode": "vsce publish minor",
+    "publish:vscode:major": "vsce publish major",
+    "publish:vscode:patch": "vsce publish patch"
+  },
+  "devDependencies": {
+    "@types/chroma-js": "3.1.1",
+    "@types/node": "catalog:",
+    "@vscode/vsce": "3.9.2",
+    "@zemd/tsconfig": "catalog:",
+    "chroma-js": "3.1.2",
+    "nodemon": "3.1.10",
+    "style-dictionary": "5.1.1",
+    "typescript": "catalog:",
+    "zod": "catalog:"
+  },
+  "contributes": {
+    "themes": [
+      {
+        "label": "Onyx Ghost",
+        "uiTheme": "vs-dark",
+        "path": "./themes/onyx-ghost.json"
+      }
+    ]
+  },
+  "icon": "icon.png",
+  "nodemonConfig": {
+    "exec": "node --experimental-strip-types ./src/index.ts",
+    "ext": ".ts,.json,.js",
+    "ignore": [
+      "src/generated/**"
+    ],
+    "watch": [
+      "src"
+    ]
+  },
+  "engines": {
+    "node": ">=24",
+    "vscode": "^1.84.0"
+  }
+}

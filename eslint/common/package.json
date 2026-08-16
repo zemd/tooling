@@ -1,0 +1,63 @@
+{
+  "name": "@zemd/eslint-common",
+  "version": "3.0.3",
+  "description": "Common utilities for @zemd/eslint-* packages",
+  "keywords": [
+    "eslint",
+    "eslint-config",
+    "eslint-flat-config",
+    "flat config",
+    "javascript"
+  ],
+  "homepage": "https://github.com/zemd/js-tooling/tree/main/eslint/common",
+  "bugs": {
+    "url": "https://github.com/zemd/js-tooling/issues"
+  },
+  "license": "Apache-2.0",
+  "author": {
+    "name": "Dmytro Zelenetskyi",
+    "email": "oss@zemd.dev",
+    "url": "https://zemd.dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zemd/js-tooling.git",
+    "directory": "eslint/common"
+  },
+  "funding": "https://github.com/sponsors/zemd",
+  "files": [
+    "dist"
+  ],
+  "type": "module",
+  "sideEffects": false,
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.mts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.mts",
+      "import": "./dist/index.mjs"
+    },
+    "./package.json": "./package.json"
+  },
+  "publishConfig": {
+    "provenance": true
+  },
+  "scripts": {
+    "build": "tsdown",
+    "dev": "tsdown --watch",
+    "lint-publish": "publint",
+    "test": "node --test",
+    "test-coverage": "node --test --experimental-test-coverage \"--test-coverage-include=src/**/*.ts\" \"--test-coverage-exclude=src/**/*.test.ts\" --test-reporter=spec --test-reporter=lcov --test-reporter-destination=stdout --test-reporter-destination=coverage.lcov",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/node": "catalog:",
+    "@zemd/tsconfig": "catalog:",
+    "eslint": "catalog:",
+    "tsdown": "catalog:",
+    "typescript": "catalog:"
+  },
+  "peerDependencies": {
+    "eslint": ">=9.2.0 || >=10.0.0"
+  }
+}

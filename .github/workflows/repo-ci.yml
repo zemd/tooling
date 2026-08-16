@@ -1,0 +1,22 @@
+name: CI
+
+permissions: {}
+
+on:
+  pull_request:
+    branches:
+      - main
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  ci:
+    name: CI
+    uses: zemd/js/.github/workflows/shared-ci.yml@fb41af590e525c7846a8dce0286fa69ac89171f7 # v4.0.1
+    permissions:
+      contents: read
+    with:
+      report-change-intents: true
+      dependency-review-severity: high

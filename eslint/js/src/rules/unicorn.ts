@@ -1,0 +1,150 @@
+import type { Feature } from "@zemd/eslint-common";
+import type { Linter } from "eslint";
+import unicorn from "eslint-plugin-unicorn";
+
+//recommended is not following the idea of this package,
+// so I hand picked some rules that I think are useful
+export const rules: Linter.RulesRecord = {
+  "unicorn/error-message": "error", // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/error-message.md
+  "unicorn/escape-case": "error", // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/escape-case.md
+  "unicorn/expiring-todo-comments": "error", // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/expiring-todo-comments.md
+  "unicorn/explicit-length-check": "error", // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/explicit-length-check.md
+  "unicorn/consistent-existence-index-check": "error", // (Dec 2024) https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/consistent-existence-index-check.md
+  "unicorn/new-for-builtins": "error", // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/new-for-builtins.md
+  "unicorn/no-abusive-eslint-disable": "error", // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-abusive-eslint-disable.md
+  "unicorn/no-array-callback-reference": "error", // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-array-callback-reference.md
+  "unicorn/no-array-method-this-argument": "error", // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-array-method-this-argument.md
+  "unicorn/no-await-expression-member": "error", // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-await-expression-member.md
+  "unicorn/no-empty-file": "error", // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-empty-file.md
+  "unicorn/no-invalid-remove-event-listener": "error", // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-invalid-remove-event-listener.md
+  "unicorn/no-new-buffer": "error", // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-new-buffer.md
+  "unicorn/no-this-assignment": "error", // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-this-assignment.md
+  "unicorn/no-unnecessary-await": "error", // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-unnecessary-await.md
+  "unicorn/no-useless-fallback-in-spread": "error", // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-useless-fallback-in-spread.md
+  "unicorn/no-useless-length-check": "error", // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-useless-length-check.md
+  "unicorn/no-useless-promise-resolve-reject": "error", // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-useless-promise-resolve-reject.md
+  "unicorn/no-useless-spread": "error", // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-useless-spread.md
+  "unicorn/no-useless-switch-case": "error", // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-useless-switch-case.md
+  "unicorn/no-zero-fractions": "error", // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-zero-fractions.md
+  "unicorn/no-single-promise-in-promise-methods": "error", // (Dec 2024) https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-single-promise-in-promise-methods.md
+  "unicorn/no-await-in-promise-methods": "error", // (Dec 2024) https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-await-in-promise-methods.md
+  "unicorn/no-invalid-fetch-options": "error", // (Dec 2024) https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-invalid-fetch-options.md
+  "unicorn/no-negation-in-equality-check": "error", // (Dec 2024) https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-negation-in-equality-check.md
+  "unicorn/number-literal-case": "error", // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/number-literal-case.md
+  "unicorn/numeric-separators-style": "error", // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/numeric-separators-style.md
+  "unicorn/prefer-add-event-listener": "error", // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-add-event-listener.md
+  "unicorn/prefer-array-find": "error", // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-array-find.md
+  "unicorn/prefer-array-flat-map": "error", // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-array-flat-map.md
+  "unicorn/prefer-array-flat": "error", // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-array-flat.md
+  "unicorn/prefer-at": "error", // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-at.md
+  "unicorn/prefer-blob-reading-methods": "error", // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-blob-reading-methods.md
+  "unicorn/prefer-code-point": "error", // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-code-point.md
+  "unicorn/prefer-date-now": "error", // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-date-now.md
+  "unicorn/prefer-dom-node-append": "error", // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-dom-node-append.md
+  "unicorn/prefer-dom-node-remove": "error", // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-dom-node-remove.md
+  "unicorn/prefer-event-target": "error", // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-event-target.md
+  "unicorn/prefer-export-from": "error", // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-export-from.md
+  "unicorn/prefer-keyboard-event-key": "error", // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-keyboard-event-key.md
+  "unicorn/prefer-logical-operator-over-ternary": "error", // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-logical-operator-over-ternary.md
+  "unicorn/prefer-modern-dom-apis": "error", // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-modern-dom-apis.md
+  "unicorn/prefer-modern-math-apis": "error", // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-modern-math-apis.md
+  "unicorn/prefer-negative-index": "error", // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-negative-index.md
+  "unicorn/prefer-node-protocol": "error", // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-node-protocol.md
+  "unicorn/prefer-number-properties": "error", // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-number-properties.md
+  "unicorn/prefer-optional-catch-binding": "error", // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-optional-catch-binding.md
+  "unicorn/prefer-prototype-methods": "error", // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-prototype-methods.md
+  "unicorn/prefer-query-selector": "error", // (???) https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-query-selector.md
+  "unicorn/prefer-reflect-apply": "error", // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-reflect-apply.md
+  "unicorn/prefer-regexp-test": "error", // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-regexp-test.md
+  "unicorn/prefer-set-size": "error", // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-set-size.md
+  "unicorn/prefer-string-replace-all": "error", // (???) https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-string-replace-all.md
+  "unicorn/prefer-string-slice": "error", // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-string-slice.md
+  "unicorn/prefer-string-starts-ends-with": "error", // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-string-starts-ends-with.md
+  "unicorn/prefer-string-trim-start-end": "error", // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-string-trim-start-end.md
+  "unicorn/prefer-type-error": "error", // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-type-error.md
+  "unicorn/prefer-string-raw": "error", // (Dec 2024) https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-string-raw.md
+  "unicorn/prefer-structured-clone": "error", // (Dec 2024) https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-structured-clone.md
+  "unicorn/prefer-math-min-max": "error", // (Dec 2024) https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-math-min-max.md
+  "unicorn/prefer-global-this": "error", // (Dec 2024) https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-global-this.md
+  "unicorn/prefer-import-meta-properties": "error", // (Apr 2025) https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-import-meta-properties.md
+  "unicorn/relative-url-style": "error", // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/relative-url-style.md
+  "unicorn/require-array-join-separator": "error", // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/require-array-join-separator.md
+  "unicorn/require-number-to-fixed-digits-argument": "error", // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/require-number-to-fixed-digits-argument.md
+  "unicorn/switch-case-braces": "error", // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/switch-case-braces.md
+  "unicorn/text-encoding-identifier-case": "error", // (???) https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/text-encoding-identifier-case.md
+  "unicorn/throw-new-error": "error", // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/throw-new-error.md
+  "unicorn/consistent-date-clone": "error", // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/consistent-date-clone.md
+  "unicorn/no-named-default": "error", // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-named-default.md
+  // "unicorn/consistent-assert": "error", // this is more stylistic rule, which might annoy. Disabling for now. https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/consistent-assert.md
+  "unicorn/no-instanceof-builtins": ["error", { strategy: "loose" }], // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-instanceof-builtins.md
+  "unicorn/no-accessor-recursion": "error", // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-accessor-recursion.md
+  "unicorn/no-unnecessary-array-splice-count": "error", // (Apr 2025) https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-unnecessary-array-splice-count.md
+  "unicorn/prefer-class-fields": "error", // (July 2025) https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-class-fields.md
+  "unicorn/no-array-reverse": ["error", { allowExpressionStatement: true }], // (July 2025) https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-array-reverse.md
+  "unicorn/require-module-specifiers": "error", // (July 2025) https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/require-module-specifiers.md
+  "unicorn/no-useless-error-capture-stack-trace": "error", // (July 2025) https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-useless-error-capture-stack-trace.md
+  "unicorn/prefer-bigint-literals": "error", // (added in Unicorn v61.0.0) https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-bigint-literals.md
+  "unicorn/prefer-classlist-toggle": "error", // (added in Unicorn v61.0.0) https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-classlist-toggle.md
+  "unicorn/require-module-attributes": "error", // (added in Unicorn v61.0.0) https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/require-module-attributes.md
+  "unicorn/no-array-sort": "error", // (added in Unicorn v61.0.0) https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-array-sort.md
+  "unicorn/no-immediate-mutation": "error", // (added in Unicorn v62.0.0) https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-immediate-mutation.md
+  "unicorn/no-useless-collection-argument": "error", // (added in Unicorn v62.0.0) https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-useless-collection-argument.md
+  "unicorn/prefer-response-static-json": "error", // (added in Unicorn v62.0.0) https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-response-static-json.md
+  "unicorn/isolated-functions": "error", // (added in Unicorn v63.0.0) https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/isolated-functions.md
+  "unicorn/better-dom-traversing": "error", // (added in Unicorn v65.0.0) https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/better-dom-traversing.md
+  "unicorn/no-array-fill-with-reference-type": "error", // (added in Unicorn v65.0.0) https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-array-fill-with-reference-type.md
+  "unicorn/no-array-from-fill": "error", // (added in Unicorn v65.0.0) https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-array-from-fill.md
+  "unicorn/no-blob-to-file": "error", // (added in Unicorn v65.0.0) https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-blob-to-file.md
+  "unicorn/no-canvas-to-image": "error", // (added in Unicorn v65.0.0) https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-canvas-to-image.md
+  "unicorn/no-incorrect-query-selector": "error", // (added in Unicorn v65.0.0) https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-incorrect-query-selector.md
+  "unicorn/no-invalid-file-input-accept": "error", // (added in Unicorn v65.0.0) https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-invalid-file-input-accept.md
+  "unicorn/no-late-current-target-access": "error", // (added in Unicorn v65.0.0) https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-late-current-target-access.md
+  "unicorn/no-unnecessary-nested-ternary": "error", // (added in Unicorn v65.0.0) https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-unnecessary-nested-ternary.md
+  "unicorn/no-unused-array-method-return": "error", // (added in Unicorn v65.0.0) https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-unused-array-method-return.md
+  "unicorn/prefer-array-last-methods": "error", // (added in Unicorn v65.0.0) https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-array-last-methods.md
+  "unicorn/prefer-queue-microtask": "error", // (added in Unicorn v65.0.0) https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-queue-microtask.md
+  "unicorn/prefer-string-match-all": "error", // (added in Unicorn v65.0.0) https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-string-match-all.md
+  "unicorn/prefer-string-pad-start-end": "error", // (added in Unicorn v65.0.0) https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-string-pad-start-end.md
+  "unicorn/require-css-escape": "error", // (added in Unicorn v65.0.0) https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/require-css-escape.md
+  "unicorn/explicit-timer-delay": "error", // (added in Unicorn v66.0.0) https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/explicit-timer-delay.md
+  "unicorn/no-negated-array-predicate": "error", // (added in Unicorn v66.0.0) https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-negated-array-predicate.md
+  "unicorn/no-negated-comparison": "error", // (added in Unicorn v66.0.0) https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-negated-comparison.md
+  "unicorn/no-subtraction-comparison": "error", // (added in Unicorn v66.0.0) https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-subtraction-comparison.md
+  "unicorn/no-unsafe-buffer-conversion": "error", // (added in Unicorn v66.0.0) https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-unsafe-buffer-conversion.md
+  "unicorn/prefer-add-event-listener-options": "error", // (added in Unicorn v66.0.0) https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-add-event-listener-options.md
+  "unicorn/prefer-dispose": "warn", // (added in Unicorn v66.0.0) https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-dispose.md
+  "unicorn/prefer-path2d": "error", // (added in Unicorn v66.0.0) https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-path2d.md
+  "unicorn/prefer-temporal": "warn", // (added in Unicorn v66.0.0) https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-temporal.md
+  "unicorn/prefer-unicode-code-point-escapes": "error", // (added in Unicorn v66.0.0) https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-unicode-code-point-escapes.md
+  "unicorn/prefer-url-href": "warn", // (added in Unicorn v66.0.0) https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-url-href.md
+  "unicorn/require-array-sort-compare": "error", // (added in Unicorn v66.0.0) https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/require-array-sort-compare.md
+  "unicorn/require-proxy-trap-boolean-return": "error", // (added in Unicorn v66.0.0) https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/require-proxy-trap-boolean-return.md
+  "unicorn/logical-assignment-operators": "warn", // (added in Unicorn v67.0.0) https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/logical-assignment-operators.md
+  "unicorn/no-useless-continue": "error", // (added in Unicorn v67.0.0) https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-useless-continue.md
+  "unicorn/no-accidental-bitwise-operator": "error", // (added in Unicorn v68.0.0) https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-accidental-bitwise-operator.md
+  "unicorn/no-collection-bracket-access": "error", // (added in Unicorn v68.0.0) https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-collection-bracket-access.md
+  "unicorn/no-impossible-length-comparison": "error", // (added in Unicorn v68.0.0) https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-impossible-length-comparison.md
+  "unicorn/no-misrefactored-assignment": "error", // (added in Unicorn v68.0.0) https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-misrefactored-assignment.md
+  "unicorn/prefer-url-can-parse": "warn", // (added in Unicorn v68.0.0) https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-url-can-parse.md
+  "unicorn/no-invalid-well-known-symbol-methods": "error", // (added in Unicorn v69.0.0) https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-invalid-well-known-symbol-methods.md
+  "unicorn/prefer-aggregate-error": "error", // (added in Unicorn v69.0.0) https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-aggregate-error.md
+  "unicorn/prefer-dom-node-replace-children": "error", // (added in Unicorn v69.0.0) https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-dom-node-replace-children.md
+  "unicorn/prefer-error-is-error": "warn", // (added in Unicorn v69.0.0) https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-error-is-error.md
+  "unicorn/prefer-observer-apis": "warn", // (added in Unicorn v69.0.0) https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-observer-apis.md
+  "unicorn/prefer-promise-try": "warn", // (added in Unicorn v69.0.0) https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-promise-try.md
+  "unicorn/prefer-set-methods": "warn", // (added in Unicorn v69.0.0) https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-set-methods.md
+  "unicorn/no-async-promise-finally": "error", // (added in Unicorn v70.0.0) https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-async-promise-finally.md
+  "unicorn/prefer-abort-signal-any": "warn", // (added in Unicorn v70.0.0) https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-abort-signal-any.md
+  "unicorn/prefer-block-statement-over-iife": "error", // (added in Unicorn v70.0.0) https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-block-statement-over-iife.md
+  "unicorn/no-multiple-promise-resolver-calls": "error", // (added in Unicorn v70.0.0) https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-multiple-promise-resolver-calls.md
+  "unicorn/no-useless-re-export": "error", // (added in Unicorn v70.0.0) https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-useless-re-export.md
+};
+
+const feature: Feature = {
+  plugins: {
+    unicorn,
+  },
+  rules,
+};
+
+export default feature;

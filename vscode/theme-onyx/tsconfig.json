@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "display": "zemd-theme-dark",
+  "extends": "@zemd/tsconfig/tsconfig-node.json",
+  "compilerOptions": {
+    "noEmit": true,
+    "allowImportingTsExtensions": true,
+    "declaration": false,
+    "declarationMap": false,
+    "isolatedDeclarations": false,
+    "sourceMap": false,
+    "skipLibCheck": true,
+    "noPropertyAccessFromIndexSignature": false
+  },
+  "include": ["src/**/*.ts", "scripts/**/*.ts"],
+  "exclude": ["node_modules", "build", "themes", "src/generated"]
+}

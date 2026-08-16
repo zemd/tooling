@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "display": "@zemd/eslint-common",
+  "extends": "@zemd/tsconfig/tsconfig-library.json",
+  "compilerOptions": {
+    "types": ["node"],
+    "isolatedDeclarations": false
+  },
+  "include": ["src/**/*.ts", "tsdown.config.ts"],
+  "exclude": ["node_modules", "dist"]
+}
