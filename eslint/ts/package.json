@@ -14,7 +14,7 @@
   ],
   "homepage": "https://eslint-config.zemd.dev/",
   "bugs": {
-    "url": "https://github.com/zemd/js-tooling/issues"
+    "url": "https://github.com/zemd/tooling/issues"
   },
   "license": "Apache-2.0",
   "author": {
@@ -24,7 +24,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/zemd/js-tooling.git",
+    "url": "git+https://github.com/zemd/tooling.git",
     "directory": "eslint/ts"
   },
   "funding": "https://github.com/sponsors/zemd",

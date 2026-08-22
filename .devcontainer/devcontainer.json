@@ -1,6 +1,6 @@
 {
   "$schema": "https://raw.githubusercontent.com/devcontainers/spec/main/schemas/devContainer.base.schema.json",
-  "name": "zemd/js-tooling",
+  "name": "zemd/tooling",
   "build": {
     "dockerfile": "Dockerfile"
   },
