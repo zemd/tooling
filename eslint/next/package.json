@@ -57,7 +57,7 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@next/eslint-plugin-next": "16.2.11",
+    "@next/eslint-plugin-next": "16.3.1",
     "@zemd/eslint-common": "workspace:*",
     "@zemd/eslint-rock-stack": "workspace:*",
     "eslint-plugin-react-refresh": "catalog:"
