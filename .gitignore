@@ -47,6 +47,7 @@ yarn-error.log*
 
 # tools
 .turbo
+.wrangler
 
 # release
 pnpm-publish-summary.json

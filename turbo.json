@@ -6,7 +6,13 @@
   "tasks": {
     "build": {
       "dependsOn": ["^build"],
-      "inputs": ["src/**", "tsconfig.json", "tsdown.config.ts", "package.json"],
+      "inputs": [
+        "src/**",
+        "eslint.config.mjs",
+        "tsconfig.json",
+        "tsdown.config.ts",
+        "package.json"
+      ],
       "outputs": ["dist/**", "themes/**"]
     },
     "test": {
