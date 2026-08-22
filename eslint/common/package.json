@@ -55,7 +55,7 @@
     "@zemd/tsconfig": "catalog:",
     "eslint": "catalog:",
     "tsdown": "catalog:",
-    "typescript": "catalog:"
+    "typescript": "catalog:eslint"
   },
   "peerDependencies": {
     "eslint": ">=9.2.0 || >=10.0.0"

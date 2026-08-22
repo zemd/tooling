@@ -1,9 +1,47 @@
 version: 2
 updates:
   - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    cooldown:
+      default-days: 7
+      exclude:
+        - "@zemd/*"
+    versioning-strategy: "increase"
+    open-pull-requests-limit: 10
+    ignore:
+      - dependency-name: "typescript"
+        update-types:
+          - "version-update:semver-major"
+    groups:
+      production-dependencies:
+        dependency-type: "production"
+      development-dependencies:
+        dependency-type: "development"
+
+  - package-ecosystem: "npm"
     directories:
-      - "/"
       - "/eslint/*"
+    schedule:
+      interval: "weekly"
+    cooldown:
+      default-days: 7
+      exclude:
+        - "@zemd/*"
+    versioning-strategy: "increase"
+    open-pull-requests-limit: 10
+    ignore:
+      - dependency-name: "typescript"
+        update-types:
+          - "version-update:semver-major"
+    groups:
+      eslint-dependencies:
+        patterns:
+          - "*"
+
+  - package-ecosystem: "npm"
+    directories:
       - "/vscode/*"
     schedule:
       interval: "weekly"
@@ -13,11 +51,14 @@ updates:
         - "@zemd/*"
     versioning-strategy: "increase"
     open-pull-requests-limit: 10
+    ignore:
+      - dependency-name: "typescript"
+        update-types:
+          - "version-update:semver-major"
     groups:
-      production-dependencies:
-        dependency-type: "production"
-      development-dependencies:
-        dependency-type: "development"
+      vscode-dependencies:
+        patterns:
+          - "*"
 
   - package-ecosystem: "docker"
     directory: "/.devcontainer"
