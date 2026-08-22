@@ -138,6 +138,10 @@ export const rules: Linter.RulesRecord = {
   "unicorn/prefer-block-statement-over-iife": "error", // (added in Unicorn v70.0.0) https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-block-statement-over-iife.md
   "unicorn/no-multiple-promise-resolver-calls": "error", // (added in Unicorn v70.0.0) https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-multiple-promise-resolver-calls.md
   "unicorn/no-useless-re-export": "error", // (added in Unicorn v70.0.0) https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-useless-re-export.md
+  "unicorn/prefer-boolean-return": "error", // (added in Unicorn v71.0.0) https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-boolean-return.md
+  "unicorn/prefer-top-level-await": "error", // (added in Unicorn v71.0.0) https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-top-level-await.md
+  "unicorn/prefer-uint8array-base64": "error", // (added in Unicorn v71.0.0) https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-uint8array-base64.md
+  "unicorn/no-unsafe-sqlite-interpolation": "error", // (added in Unicorn v73.0.0) https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-unsafe-sqlite-interpolation.md
 };
 
 const feature: Feature = {
