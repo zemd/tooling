@@ -12,7 +12,7 @@
     "javascript",
     "typescript"
   ],
-  "homepage": "https://github.com/zemd/js-tooling/tree/main/eslint/ts",
+  "homepage": "https://eslint-config.zemd.dev/",
   "bugs": {
     "url": "https://github.com/zemd/js-tooling/issues"
   },

@@ -11,7 +11,7 @@
     "flat config",
     "javascript"
   ],
-  "homepage": "https://github.com/zemd/js-tooling/tree/main/eslint/js",
+  "homepage": "https://eslint-config.zemd.dev/",
   "bugs": {
     "url": "https://github.com/zemd/js-tooling/issues"
   },

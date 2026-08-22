@@ -15,7 +15,7 @@
     "tailwindcss",
     "typescript"
   ],
-  "homepage": "https://github.com/zemd/js-tooling/tree/main/eslint/next",
+  "homepage": "https://eslint-config.zemd.dev/",
   "bugs": {
     "url": "https://github.com/zemd/js-tooling/issues"
   },

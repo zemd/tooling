@@ -14,7 +14,7 @@
     "tailwindcss",
     "typescript"
   ],
-  "homepage": "https://github.com/zemd/js-tooling/tree/main/eslint/rock-stack",
+  "homepage": "https://eslint-config.zemd.dev/",
   "bugs": {
     "url": "https://github.com/zemd/js-tooling/issues"
   },

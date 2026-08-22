@@ -13,7 +13,7 @@
     "react",
     "typescript"
   ],
-  "homepage": "https://github.com/zemd/js-tooling/tree/main/eslint/react",
+  "homepage": "https://eslint-config.zemd.dev/",
   "bugs": {
     "url": "https://github.com/zemd/js-tooling/issues"
   },
