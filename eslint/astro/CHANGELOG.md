@@ -1,5 +1,17 @@
 # @zemd/eslint-astro
 
+## 1.1.2
+
+### Patch Changes
+
+- Migrate package metadata and TypeScript build tooling to the js-tooling monorepo.
+
+- Avoid applying the React preset twice in the combined Astro configuration.
+
+- Updated dependencies:
+  - @zemd/eslint-common@3.0.4
+  - @zemd/eslint-react@3.1.2
+
 ## 1.1.1
 
 ### Patch Changes

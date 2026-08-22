@@ -1,6 +1,6 @@
 {
   "name": "@zemd/eslint-next",
-  "version": "3.1.1",
+  "version": "3.1.2",
   "description": "Shared ESLint config for Next.js projects",
   "keywords": [
     "eslint",
