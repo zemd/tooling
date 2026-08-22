@@ -54,13 +54,13 @@
     "publish:vscode:patch": "vsce publish patch"
   },
   "devDependencies": {
-    "@types/chroma-js": "3.1.1",
+    "@types/chroma-js": "3.1.2",
     "@types/node": "catalog:",
     "@vscode/vsce": "3.9.2",
     "@zemd/tsconfig": "catalog:",
-    "chroma-js": "3.1.2",
-    "nodemon": "3.1.10",
-    "style-dictionary": "5.1.1",
+    "chroma-js": "3.2.0",
+    "nodemon": "3.1.14",
+    "style-dictionary": "5.5.1",
     "typescript": "catalog:",
     "zod": "catalog:"
   },
