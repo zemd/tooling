@@ -1,5 +1,11 @@
 # @zemd/eslint-common
 
+## 3.0.4
+
+### Patch Changes
+
+- Migrate package metadata and TypeScript build tooling to the js-tooling monorepo.
+
 ## 3.0.3
 
 ### Patch Changes

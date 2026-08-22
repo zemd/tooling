@@ -1,1 +1,29 @@
-{}
+"@zemd/eslint-astro@1.1.2":
+  dir: eslint/astro
+  intents:
+    - nine-spiders-accept
+    - petite-windows-matter
+"@zemd/eslint-common@3.0.4":
+  dir: eslint/common
+  intents:
+    - nine-spiders-accept
+"@zemd/eslint-js@3.1.2":
+  dir: eslint/js
+  intents:
+    - nine-spiders-accept
+"@zemd/eslint-next@3.1.2":
+  dir: eslint/next
+  intents:
+    - nine-spiders-accept
+"@zemd/eslint-react@3.1.2":
+  dir: eslint/react
+  intents:
+    - nine-spiders-accept
+"@zemd/eslint-rock-stack@3.1.2":
+  dir: eslint/rock-stack
+  intents:
+    - nine-spiders-accept
+"@zemd/eslint-ts@3.1.2":
+  dir: eslint/ts
+  intents:
+    - nine-spiders-accept

@@ -1,5 +1,15 @@
 # @zemd/eslint-rock-stack
 
+## 3.1.2
+
+### Patch Changes
+
+- Migrate package metadata and TypeScript build tooling to the js-tooling monorepo.
+
+- Updated dependencies:
+  - @zemd/eslint-common@3.0.4
+  - @zemd/eslint-react@3.1.2
+
 ## 3.1.1
 
 ### Patch Changes
