@@ -346,8 +346,8 @@ importers:
         specifier: 3.1.14
         version: 3.1.14
       style-dictionary:
-        specifier: 5.5.1
-        version: 5.5.1
+        specifier: 5.5.2
+        version: 5.5.2
       typescript:
         specifier: 'catalog:'
         version: 6.0.3
@@ -4778,8 +4778,8 @@ packages:
   structured-source@4.0.0:
     resolution: {integrity: sha512-qGzRFNJDjFieQkl/sVOI2dUjHKRyL9dAJi2gCPGJLbJHBIkyOHxjuocpIEfbLioX+qSJpvbYdT49/YCdMznKxA==}
 
-  style-dictionary@5.5.1:
-    resolution: {integrity: sha512-+fwPuRKopBLNolzefOHrAtCQomJqj0HVbH0XWBwXEQR3CV+i2pkNY5yCSPPv0qNHc3ibnbuzF4Qui3tZehexIw==}
+  style-dictionary@5.5.2:
+    resolution: {integrity: sha512-OPXsfLzy+8YZrUmlgOGDmTlykL8xWLvhb70bHUvBKkPCY75eQabQsl+Jd4JO8nC/uuz/6UdikCHxagiBdUugtw==}
     engines: {node: '>=22.0.0'}
     hasBin: true
 
@@ -9747,7 +9747,7 @@ snapshots:
     dependencies:
       boundary: 2.0.0
 
-  style-dictionary@5.5.1:
+  style-dictionary@5.5.2:
     dependencies:
       '@bundled-es-modules/deepmerge': 4.3.2
       '@bundled-es-modules/glob': 13.0.6
