@@ -1,7 +1,6 @@
 # Shared ESLint config for Next.js projects
 
 [![npm](https://img.shields.io/npm/v/@zemd/eslint-next?color=0000ff&label=npm&labelColor=000)](https://npmjs.com/package/@zemd/eslint-next)
-[![GitHub](https://img.shields.io/badge/zemd%2Fjs--tooling-gray?style=social&logo=github&label=GitHub&labelColor=blue)](https://github.com/zemd/js-tooling)
 
 This package includes a set of ESLint configurations for Next.js projects.
 

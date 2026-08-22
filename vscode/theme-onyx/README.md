@@ -14,7 +14,7 @@
 - Font: [MonoLisa](https://www.monolisa.dev/)
 - File Icon Theme: [Helium Icon Theme](https://marketplace.visualstudio.com/items?itemName=helgardrichard.helium-icon-theme)
 - Product Icon Theme: [Fluent Icons](https://marketplace.visualstudio.com/items?itemName=miguelsolorio.fluent-icons)
-- Theme: [Onyx](https://github.com/zemd/js-tooling/tree/main/vscode/theme-onyx)
+- Theme: [Onyx](https://github.com/zemd/tooling/tree/main/vscode/theme-onyx)
 
 ## Install
 

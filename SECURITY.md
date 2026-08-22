@@ -8,7 +8,7 @@ Do not report vulnerabilities through public issues, pull requests, or discussio
 
 Use one of these private channels:
 
-1. [GitHub Private Vulnerability Reporting](https://github.com/zemd/js-tooling/security/advisories/new) (preferred).
+1. [GitHub Private Vulnerability Reporting](https://github.com/zemd/tooling/security/advisories/new) (preferred).
 2. Email <oss@zemd.dev> with the subject `SECURITY: <package name>`.
 
 Include the affected package and version, impact, environment, reproduction steps, and any known mitigations. The maintainers aim to acknowledge complete reports within two business days and provide an initial assessment within seven business days.
