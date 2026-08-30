@@ -60,7 +60,7 @@
     "@zemd/tsconfig": "catalog:",
     "chroma-js": "3.2.0",
     "nodemon": "3.1.14",
-    "style-dictionary": "5.5.1",
+    "style-dictionary": "5.5.2",
     "typescript": "catalog:vscode",
     "zod": "catalog:"
   },
