@@ -13,8 +13,8 @@
     "@zemd/eslint-next": "workspace:*"
   },
   "devDependencies": {
-    "@eslint/config-inspector": "3.2.0",
+    "@eslint/config-inspector": "3.3.0",
     "typescript": "catalog:eslint",
-    "wrangler": "4.123.0"
+    "wrangler": "4.125.0"
   }
 }
