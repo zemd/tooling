@@ -11,12 +11,12 @@ versioning:
 
 catalog:
   "@types/eslint": 9.6.1
-  "@types/node": 26.2.0
+  "@types/node": 26.4.0
   "@zemd/tsconfig": 2.1.1
-  eslint: 10.8.1
-  eslint-plugin-react-refresh: 0.5.4
+  eslint: 10.9.1
+  eslint-plugin-react-refresh: 0.5.5
   tsdown: 0.22.14
-  zod: 4.4.3
+  zod: 4.5.4
 
 catalogs:
   eslint:
