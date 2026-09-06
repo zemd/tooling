@@ -20,6 +20,6 @@ concurrency:
 jobs:
   zizmor:
     name: zizmor
-    uses: zemd/js/.github/workflows/shared-zizmor.yml@fb41af590e525c7846a8dce0286fa69ac89171f7 # v4.0.1
+    uses: zemd/js/.github/workflows/shared-zizmor.yml@90cbb33b807a57692d0b86fb24e41c003e440c8e # v4.0.4
     permissions:
       contents: read
