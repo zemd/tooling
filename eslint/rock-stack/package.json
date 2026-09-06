@@ -65,8 +65,8 @@
     "@zemd/eslint-common": "workspace:*",
     "@zemd/eslint-react": "workspace:*",
     "eslint-plugin-playwright": "2.11.0",
-    "eslint-plugin-storybook": "10.5.8",
-    "eslint-plugin-turbo": "2.10.10"
+    "eslint-plugin-storybook": "10.5.10",
+    "eslint-plugin-turbo": "2.10.12"
   },
   "devDependencies": {
     "@types/eslint": "catalog:",
