@@ -56,11 +56,11 @@
   "devDependencies": {
     "@types/chroma-js": "3.1.2",
     "@types/node": "catalog:",
-    "@vscode/vsce": "3.9.2",
+    "@vscode/vsce": "4.0.0",
     "@zemd/tsconfig": "catalog:",
     "chroma-js": "3.2.0",
     "nodemon": "3.1.14",
-    "style-dictionary": "5.5.2",
+    "style-dictionary": "5.6.1",
     "typescript": "catalog:vscode",
     "zod": "catalog:"
   },
