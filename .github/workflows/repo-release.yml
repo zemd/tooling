@@ -20,7 +20,7 @@ env:
 jobs:
   release:
     name: Release
-    uses: zemd/js/.github/workflows/shared-release.yml@51102461747d67662560c4176ed201d473ab1bf1 # v4.0.6
+    uses: zemd/js/.github/workflows/shared-release.yml@9256be47f23f4c404b36ec1454d568bbc886fe2a # v4.0.7
     permissions:
       contents: read # check release state and pinned tooling
       id-token: write # npm trusted publishing (OIDC)
@@ -47,7 +47,7 @@ jobs:
           persist-credentials: false
 
       - name: Setup pnpm
-        uses: pnpm/action-setup@ea17c68df8912ef543352723c149a84f56e3d413 # v6.1.0
+        uses: pnpm/action-setup@73e46992e05b19abd31f2f3c20e0e7370d762115 # v6.1.1
         with:
           run_install: false
 
